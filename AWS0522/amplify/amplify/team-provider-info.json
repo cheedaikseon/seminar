@@ -1,0 +1,19 @@
+{
+    "ausgenv": {
+        "awscloudformation": {
+            "AuthRoleName": "aws20190522-ausgenv-20190522201751-authRole",
+            "UnauthRoleArn": "arn:aws:iam::639628799511:role/aws20190522-ausgenv-20190522201751-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::639628799511:role/aws20190522-ausgenv-20190522201751-authRole",
+            "Region": "ap-northeast-2",
+            "DeploymentBucketName": "aws20190522-ausgenv-20190522201751-deployment",
+            "UnauthRoleName": "aws20190522-ausgenv-20190522201751-unauthRole",
+            "StackName": "aws20190522-ausgenv-20190522201751",
+            "StackId": "arn:aws:cloudformation:ap-northeast-2:639628799511:stack/aws20190522-ausgenv-20190522201751/3c1ca120-7c83-11e9-813a-02d2603b6cbc"
+        },
+        "categories": {
+            "auth": {
+                "aws201905221d499096": {}
+            }
+        }
+    }
+}

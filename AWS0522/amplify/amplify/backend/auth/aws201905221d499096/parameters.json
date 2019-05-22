@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "aws201905221d499096_identitypool_1d499096",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "aws201_1d499096_lambda_log_policy",
+    "openIdLambdaRoleName": "aws201_1d499096_openid_lambda_role",
+    "openIdRolePolicy": "aws201_1d499096_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "aws201_1d499096_openid_lambda_iam_policy",
+    "openIdLogPolicy": "aws201_1d499096_openid_lambda_log_policy",
+    "userPoolName": "aws201905221d499096_userpool_1d499096",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "aws2011d499096_sns-role",
+    "roleExternalId": "aws2011d499096_role_external_id",
+    "policyName": "aws2011d499096-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "aws2011d499096_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "aws2011d499096_totp_lambda_role",
+    "mfaLambdaLogPolicy": "aws2011d499096_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "aws2011d499096_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "aws2011d499096_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "aws2011d499096_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "aws2011d499096_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "aws2011d499096_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "aws201905221d499096",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}
